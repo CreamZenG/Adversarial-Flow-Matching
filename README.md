@@ -23,7 +23,7 @@ It exploits the structural vulnerabilities of **Transformer backbones** (used by
 The proposed **Adversarial Flow Matching (AFM)** framework:
 
 - Inverts a clean image into the latent space via a frozen VAE encoder.
-- Injects **dual perturbations**: `δ<sub>z</sub>` (latent space) and `δ<sub>u</sub>` (neural velocity field).
+- Injects **dual perturbations**: $\delta_z$ (latent space) and $\delta_u$ (neural velocity field).
 - Performs **single‑step ODE update** (1‑NFE) using a pre‑trained Flow Matching network.
 - Optimizes an **attention‑guided loss** that focuses on road regions and high‑saliency tokens.
 
