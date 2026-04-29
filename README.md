@@ -31,7 +31,7 @@ The proposed <strong>Adversarial Flow Matching (AFM)</strong> framework:
 The resulting adversarial image remains virtually indistinguishable from the clean input but forces the target AD agent into hazardous maneuvers (e.g., off‑road, collisions).
 </td>
 <td width="40%" align="center">
-  < img src="AFM_framework.png" alt="AFM pipeline" width="100%">
+  < img src="/main/AFM_framework.png" alt="AFM pipeline" width="100%">
   <br>
   <em>Fig. 2 from the paper – AFM attack mechanism</em>
 </td>
@@ -40,8 +40,6 @@ The resulting adversarial image remains virtually indistinguishable from the cle
 
 
 ---
-![AFM pipeline](main/AFM.png)
-*Fig. 2 from the paper – AFM attack mechanism*
 
 
 ## 📊 Experimental Results
