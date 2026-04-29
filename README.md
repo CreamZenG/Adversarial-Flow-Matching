@@ -1,8 +1,10 @@
 # AFM: Adversarial Flow Matching for Imperceptible Attacks on End-to-End Autonomous Driving
 
+<p align="center">
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-red)](https://arxiv.org/abs/xxxx.xxxxx) 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+</p>
 
 **AFM** is a novel **gray‑box adversarial attack** against end‑to‑end autonomous driving agents.  
 It exploits the structural vulnerabilities of **Transformer backbones** (used by both monolithic VLA models and modular architectures) and generates **visually imperceptible** adversarial examples in **one step** (1‑NFE) via a neural average velocity field.
