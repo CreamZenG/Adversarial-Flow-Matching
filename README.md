@@ -40,7 +40,8 @@ The resulting adversarial image remains virtually indistinguishable from the cle
 
 
 ---
-
+![AFM pipeline](main/AFM.png)
+*Fig. 2 from the paper – AFM attack mechanism*
 
 
 ## 📊 Experimental Results
