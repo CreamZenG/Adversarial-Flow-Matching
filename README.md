@@ -20,26 +20,22 @@ It exploits the structural vulnerabilities of **Transformer backbones** (used by
 
 ## ✨ Attack Overview
 
-<table>
-<tr>
-<td width="60%">
-The proposed <strong>Adversarial Flow Matching (AFM)</strong> framework:
-<ul>
-  <li>Inverts a clean image into the latent space via a frozen VAE encoder.</li>
-  <li>Injects <strong>dual perturbations</strong>: <code>δ<sub>z</sub></code> (latent space) and <code>δ<sub>u</sub></code> (neural velocity field).</li>
-  <li>Performs <strong>single‑step ODE update</strong> (1‑NFE) using a pre‑trained Flow Matching network.</li>
-  <li>Optimizes an <strong>attention‑guided loss</strong> that focuses on road regions and high‑saliency tokens.</li>
-</ul>
+The proposed **Adversarial Flow Matching (AFM)** framework:
+
+- Inverts a clean image into the latent space via a frozen VAE encoder.
+- Injects **dual perturbations**: `δ<sub>z</sub>` (latent space) and `δ<sub>u</sub>` (neural velocity field).
+- Performs **single‑step ODE update** (1‑NFE) using a pre‑trained Flow Matching network.
+- Optimizes an **attention‑guided loss** that focuses on road regions and high‑saliency tokens.
+
 The resulting adversarial image remains virtually indistinguishable from the clean input but forces the target AD agent into hazardous maneuvers (e.g., off‑road, collisions).
-</td>
-<td width="40%" align="center">
-  <img src="AFM_framework.png" alt="AFM Framework" width="100%">
+
+<br>
+
+<div align="center">
+  <img src="AFM_framework.png" alt="AFM Framework" width="80%">
   <br>
   <em>Fig. 2 from the paper – Overview of the AFM framework</em>
-</td>
-</tr>
-</table>
-
+</div>
 
 ---
 
