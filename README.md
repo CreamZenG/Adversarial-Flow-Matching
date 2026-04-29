@@ -33,7 +33,7 @@ The resulting adversarial image remains virtually indistinguishable from the cle
 <td width="40%" align="center">
   <img src="AFM_framework.png" alt="AFM Framework" width="100%">
   <br>
-  <em>Fig. 2 from the paper – AFM attack mechanism</em>
+  <em>Fig. 2 from the paper – Overview of the AFM framework</em>
 </td>
 </tr>
 </table>
