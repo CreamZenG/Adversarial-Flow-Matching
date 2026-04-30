@@ -105,20 +105,8 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 
 > ✅ AFM achieves the **best visual imperceptibility** (lowest LPIPS, FID, highest SSIM) while maintaining high attack success (SR ≈ 88%). It is **40% faster** than DiffAttack.
 
-**Table II – Performance on SimLingo (VLA)**
-
-| Method         | SHIFT (m) ↑ | SR (%) ↑  | LPIPS ↓   | SSIM ↑    | FID ↓    | TIME (s) ↓ |
-| -------------- | ----------- | --------- | --------- | --------- | -------- | ---------- |
-| FGSM           | 2.53        | 78.18     | 0.395     | 0.734     | 54.01    | **0.48**   |
-| PGD            | 6.51        | 96.26     | 0.326     | 0.798     | 45.67    | 1.80       |
-| DiffAttack     | 1.66        | 59.92     | 0.114     | 0.928     | 20.61    | 9.98       |
-| PerC‑AL        | 2.29        | 72.26     | 0.099     | 0.960     | 13.71    | 10.83      |
-| NCF            | 0.91        | 28.48     | 0.237     | 0.848     | 33.09    | 4.56       |
-| **AFM (ours)** | 3.20        | **87.14** | **0.075** | **0.959** | **8.10** | 6.83       |
-
 ###### <div align="center">**Table II</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON SIMLINGO (DAY(D)/NIGHT(N) SCENARIOS)**</div>
 <table style="width: 100%; border-collapse: collapse;">
-  <caption><strong>Table II</strong><br>PERFORMANCE COMPARISON ON SIMLINGO (DAY/NIGHT)</caption>
   <thead>
     <tr><th rowspan="2">Method</th><th colspan="2">SHIFT (m) ↑</th><th colspan="2">SR (%) ↑</th><th colspan="2">LPIPS ↓</th><th colspan="2">SSIM ↑</th><th colspan="2">FID ↓</th><th colspan="2">TIME (s) ↓</th></tr>
     <tr><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th></tr>
@@ -140,6 +128,37 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ### 🔄 Cross‑Model Transferability (Gray‑Box Setting)
 
 We attack **without target gradients** – only knowledge that the victim uses a Transformer.
+
+<table style="width: 100%; border-collapse: collapse;">
+  <caption align="center">
+    <strong>TABLE III</strong><br>
+    CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO (SL) AND TRANSFUSER (TF)
+  </caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="2">SHIFT (m) ↑</th>
+      <th colspan="2">SR (%) ↑</th>
+      <th colspan="2">LPIPS ↓</th>
+      <th colspan="2">SSIM ↑</th>
+    </tr>
+    <tr>
+      <th>SL → TF</th><th>TF → SL</th>
+      <th>SL → TF</th><th>TF → SL</th>
+      <th>SL → TF</th><th>TF → SL</th>
+      <th>SL → TF</th><th>TF → SL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>FGSM</td><td>0.331</td><td>1.268</td><td>8.40</td><td>47.21</td><td>0.487</td><td>0.346</td><td>0.725</td><td>0.737</td></tr>
+    <tr><td>PGD</td><td>0.316</td><td>1.337</td><td>8.40</td><td>50.71</td><td>0.476</td><td>0.291</td><td>0.763</td><td>0.812</td></tr>
+    <tr><td>DiffAttack</td><td>0.474</td><td>1.270</td><td>12.61</td><td>48.36</td><td>0.114</td><td>0.170</td><td>0.980</td><td>0.859</td></tr>
+    <tr><td>PerC-AL</td><td>0.165</td><td>1.207</td><td>3.36</td><td>45.79</td><td>0.124</td><td>0.357</td><td>0.960</td><td>0.776</td></tr>
+    <tr><td>NCF</td><td>0.390</td><td>1.206</td><td>8.61</td><td>45.00</td><td>0.293</td><td>0.264</td><td>0.894</td><td>0.868</td></tr>
+    <tr><td><strong>AFM (Ours)</strong></td><td><strong>0.506</strong></td><td>1.192</td><td><strong>12.82</strong></td><td>46.68</td><td><strong>0.022</strong></td><td><strong>0.148</strong></td><td><strong>0.995</strong></td><td><strong>0.871</strong></td></tr>
+  </tbody>
+</table>
+
 
 **Table III – Transfer between SimLingo (SL) and TransFuser (TF)**
 
