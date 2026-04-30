@@ -72,7 +72,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ---
 
 ### 📈 Open-loop Evaluation
-<small>**Table I – PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**</small>
+###### **Table I – PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**</small>
 <table>
   <thead>
     <tr>
