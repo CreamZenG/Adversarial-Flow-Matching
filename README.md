@@ -128,7 +128,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ### 🔄 Cross‑Model Transferability (Gray‑Box Setting)
 
 We attack **without target gradients** – only knowledge that the victim uses a Transformer.
-###### <div align="center">**Table III</br>CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO(SL) AND TRANSFUSER(TF).**</div>
+###### **Table III</br>CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO(SL) AND TRANSFUSER(TF).**
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
@@ -154,17 +154,6 @@ We attack **without target gradients** – only knowledge that the victim uses a
     <tr><td><strong>AFM (Ours)</strong></td><td><strong>0.506</strong></td><td>1.192</td><td><strong>12.82</strong></td><td>46.68</td><td><strong>0.022</strong></td><td><strong>0.148</strong></td><td><strong>0.995</strong></td><td><strong>0.871</strong></td></tr>
   </tbody>
 </table>
-
-
-**Table III – Transfer between SimLingo (SL) and TransFuser (TF)**
-
-| Direction | Method     | SHIFT (m) ↑ | SR (%) ↑  | LPIPS ↓   | SSIM ↑    |
-| --------- | ---------- | ----------- | --------- | --------- | --------- |
-| SL → TF   | PGD        | 0.316       | 8.40      | 0.476     | 0.763     |
-|           | DiffAttack | 0.474       | 12.61     | 0.114     | 0.980     |
-|           | **AFM**    | **0.506**   | **12.82** | **0.022** | **0.995** |
-| TF → SL   | PGD        | 1.337       | 50.71     | 0.291     | 0.812     |
-|           | **AFM**    | 1.192       | 46.68     | **0.148** | **0.871** |
 
 - AFM achieves **state‑of‑the‑art transfer imperceptibility** (LPIPS as low as 0.022) while keeping attack success competitive.
 - This verifies that **any Transformer‑based AD agent** is vulnerable, regardless of architecture (modular or VLA).
