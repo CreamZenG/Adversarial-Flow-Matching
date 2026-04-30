@@ -184,7 +184,6 @@ Intermittent attack (every 10 frames) – temporal compounding of errors.
 ### 🧩 Ablation Study
 
 ###### **Table V</br>EFFECT OF PERTURBATION BUDGET `ε` (ε_z = ε_u)**
-**Effect of perturbation budget `ε` (ε_z = ε_u)**
 
 | ε    | SR (%) ↑ | SSIM ↑    | LPIPS ↓   |
 | ---- | -------- | --------- | --------- |
