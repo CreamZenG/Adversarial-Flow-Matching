@@ -128,12 +128,8 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ### 🔄 Cross‑Model Transferability (Gray‑Box Setting)
 
 We attack **without target gradients** – only knowledge that the victim uses a Transformer.
-
+###### <div align="center">**Table III</br>CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO(SL) AND TRANSFUSER(TF).**</div>
 <table style="width: 100%; border-collapse: collapse;">
-  <caption align="center">
-    <strong>TABLE III</strong><br>
-    CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO (SL) AND TRANSFUSER (TF)
-  </caption>
   <thead>
     <tr>
       <th rowspan="2">Method</th>
@@ -151,7 +147,7 @@ We attack **without target gradients** – only knowledge that the victim uses a
   </thead>
   <tbody>
     <tr><td>FGSM</td><td>0.331</td><td>1.268</td><td>8.40</td><td>47.21</td><td>0.487</td><td>0.346</td><td>0.725</td><td>0.737</td></tr>
-    <tr><td>PGD</td><td>0.316</td><td>1.337</td><td>8.40</td><td>50.71</td><td>0.476</td><td>0.291</td><td>0.763</td><td>0.812</td></tr>
+    <tr><td>PGD</td><td>0.316</td><td><b>1.337</b></td><td>8.40</td><td>50.71</td><td>0.476</td><td>0.291</td><td>0.763</td><td>0.812</td></tr>
     <tr><td>DiffAttack</td><td>0.474</td><td>1.270</td><td>12.61</td><td>48.36</td><td>0.114</td><td>0.170</td><td>0.980</td><td>0.859</td></tr>
     <tr><td>PerC-AL</td><td>0.165</td><td>1.207</td><td>3.36</td><td>45.79</td><td>0.124</td><td>0.357</td><td>0.960</td><td>0.776</td></tr>
     <tr><td>NCF</td><td>0.390</td><td>1.206</td><td>8.61</td><td>45.00</td><td>0.293</td><td>0.264</td><td>0.894</td><td>0.868</td></tr>
