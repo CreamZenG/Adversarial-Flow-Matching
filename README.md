@@ -74,6 +74,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ### 📈 Open-loop Evaluation
 ###### <div align="center">**Table I</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**</div>
 <table style="width: 100%; border-collapse: collapse;">
+  <caption><small><strong>Table I</strong><br>PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER (modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS</small></caption>
   <thead>
     <tr>
       <th rowspan="2">Method</th>
@@ -115,6 +116,22 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 | PerC‑AL        | 2.29        | 72.26     | 0.099     | 0.960     | 13.71    | 10.83      |
 | NCF            | 0.91        | 28.48     | 0.237     | 0.848     | 33.09    | 4.56       |
 | **AFM (ours)** | 3.20        | **87.14** | **0.075** | **0.959** | **8.10** | 6.83       |
+
+<table style="width: 100%; border-collapse: collapse;">
+  <caption><strong>Table II</strong><br>PERFORMANCE COMPARISON ON SIMLINGO (DAY/NIGHT)</caption>
+  <thead>
+    <tr><th rowspan="2">Method</th><th colspan="2">SHIFT (m) ↑</th><th colspan="2">SR (%) ↑</th><th colspan="2">LPIPS ↓</th><th colspan="2">SSIM ↑</th><th colspan="2">FID ↓</th><th colspan="2">TIME (s) ↓</th></tr>
+    <tr><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th><th>D</th><th>N</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>FGSM</td><td>2.638</td><td>2.414</td><td>79.48</td><td>76.87</td><td>0.407</td><td>0.382</td><td>0.745</td><td>0.723</td><td>59.370</td><td>48.653</td><td>0.474</td><td>0.479</td></tr>
+    <tr><td>PGD</td><td>6.787</td><td>6.236</td><td>95.48</td><td>97.03</td><td>0.346</td><td>0.306</td><td>0.795</td><td>0.800</td><td>50.008</td><td>41.331</td><td>1.789</td><td>1.806</td></tr>
+    <tr><td>DiffAttack</td><td>1.703</td><td>1.614</td><td>59.98</td><td>59.16</td><td>0.110</td><td>0.117</td><td>0.939</td><td>0.916</td><td>19.995</td><td>21.224</td><td>9.980</td><td>9.982</td></tr>
+    <tr><td>PerC-AL</td><td>2.209</td><td>2.379</td><td>71.42</td><td>73.10</td><td>0.089</td><td>0.109</td><td>0.973</td><td>0.947</td><td>11.008</td><td>16.416</td><td>10.830</td><td>10.835</td></tr>
+    <tr><td>NCF</td><td>0.977</td><td>0.841</td><td>32.27</td><td>24.65</td><td>0.219</td><td>0.254</td><td>0.917</td><td>0.779</td><td>34.317</td><td>31.868</td><td>4.536</td><td>4.590</td></tr>
+    <tr><td>AFM (Ours)</td><td>3.360</td><td>3.039</td><td>87.14</td><td>85.98</td><td><b>0.074</b></td><td><b>0.075</b></td><td><b>0.961</b></td><td><b>0.957</b></td><td><b>8.875</b></td><td><b>7.332</b></td><td>6.814</td><td>6.849</td></tr>
+  </tbody>
+</table>
 
 > 🔥 On the more challenging VLA agent, AFM again **outperforms all baselines in imperceptibility** (LPIPS 0.075, FID 8.10) while achieving the **highest attack success rate** (87.14%).
 
