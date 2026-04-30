@@ -72,7 +72,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ---
 
 ### 📈 Open-loop Evaluation
-###### <div align="center">**Table I</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(COMPLEX(H)/COMMON(E) SCENARIOS)**</div>
+###### **Table I</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(COMPLEX(H)/COMMON(E) SCENARIOS)**
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
@@ -105,7 +105,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 
 > ✅ AFM achieves the **best visual imperceptibility** (lowest LPIPS, FID, highest SSIM) while maintaining high attack success (SR ≈ 88%). It is **40% faster** than DiffAttack.
 
-###### <div align="center">**Table II</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON SIMLINGO (DAY(D)/NIGHT(N) SCENARIOS)**</div>
+###### **Table II</br>PERFORMANCE COMPARISON OF ATTACK METHODS ON SIMLINGO (DAY(D)/NIGHT(N) SCENARIOS)**
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr><th rowspan="2">Method</th><th colspan="2">SHIFT (m) ↑</th><th colspan="2">SR (%) ↑</th><th colspan="2">LPIPS ↓</th><th colspan="2">SSIM ↑</th><th colspan="2">FID ↓</th><th colspan="2">TIME (s) ↓</th></tr>
@@ -164,7 +164,7 @@ We attack **without target gradients** – only knowledge that the victim uses a
 
 Intermittent attack (every 10 frames) – temporal compounding of errors.
 
-**Table IV – Closed‑loop performance and failure modes**
+###### **Table IV</br>COMPREHENSIVE COMPARISON OF ADVERSARIAL ATTACKS ON SIMLINGO UNDER CLOSED-LOOP SIMULATIONS**
 
 | Method     | RC (%) ↓ | Off‑Road ↑ | Collisions ↑ | Route Dev ↑ | Blocked ↑ | LPIPS ↓   | SSIM ↑    |
 | ---------- | -------- | ---------- | ------------ | ----------- | --------- | --------- | --------- |
@@ -183,6 +183,7 @@ Intermittent attack (every 10 frames) – temporal compounding of errors.
 
 ### 🧩 Ablation Study
 
+###### **Table V</br>EFFECT OF PERTURBATION BUDGET `ε` (ε_z = ε_u)**
 **Effect of perturbation budget `ε` (ε_z = ε_u)**
 
 | ε    | SR (%) ↑ | SSIM ↑    | LPIPS ↓   |
