@@ -72,7 +72,7 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ---
 
 ### 📈 Open-loop Evaluation
-**Table I – PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**
+<small>**Table I – PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER(modular paradigms) ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**</small>
 <table>
   <thead>
     <tr>
@@ -102,18 +102,6 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
     <tr><td>AFM (Ours)</td><td>3.709</td><td>4.932</td><td>69.35</td><td>88.24</td><td><b>0.147</b></td><td><b>0.141</b></td><td><b>0.876</b></td><td><b>0.881</b></td><td><b>11.460</b></td><td><b>23.180</b></td><td>6.652</td><td>6.749</td></tr>
   </tbody>
 </table>
-
-
-**Table I – Performance on TransFuser (modular)**
-
-| Method         | SHIFT (m) ↑ | SR (%) ↑  | LPIPS ↓   | SSIM ↑    | FID ↓     | TIME (s) ↓ |
-| -------------- | ----------- | --------- | --------- | --------- | --------- | ---------- |
-| FGSM           | 4.89        | 89.71     | 0.370     | 0.708     | 64.19     | **0.14**   |
-| PGD            | 5.99        | 92.03     | 0.359     | 0.732     | 58.43     | 1.23       |
-| DiffAttack     | 2.47        | 60.12     | 0.165     | 0.871     | 36.57     | 10.61      |
-| PerC‑AL        | 6.81        | **97.06** | 0.694     | 0.196     | 223.98    | 11.15      |
-| NCF            | 0.52        | 15.34     | 0.256     | 0.879     | 34.22     | 3.07       |
-| **AFM (ours)** | 4.93        | 88.24     | **0.141** | **0.881** | **23.18** | 6.75       |
 
 > ✅ AFM achieves the **best visual imperceptibility** (lowest LPIPS, FID, highest SSIM) while maintaining high attack success (SR ≈ 88%). It is **40% faster** than DiffAttack.
 
