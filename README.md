@@ -1,4 +1,4 @@
-# AFM: Adversarial Flow Matching for Imperceptible Attacks on End-to-End Autonomous Driving
+# <p align="center">AFM: Adversarial Flow Matching for Imperceptible Attacks on End-to-End Autonomous Driving</b>
 
 <p align="center">
   <a href="https://arxiv.org/abs/xxxx.xxxxx"><img src="https://img.shields.io/badge/Paper-ArXiv-red" alt="Paper"></a>
