@@ -128,7 +128,8 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ### 🔄 Cross‑Model Transferability (Gray‑Box Setting)
 
 We attack **without target gradients** – only knowledge that the victim uses a Transformer.
-###### **Table III</br>CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO(SL) AND TRANSFUSER(TF).**
+###### <div align="center">**Table III</br>CROSS-MODEL TRANSFERABILITY ANALYSIS BETWEEN SIMLINGO(SL) AND TRANSFUSER(TF).**</div>
+<div align="center">
 <table style="width: 100%; border-collapse: collapse;">
   <thead>
     <tr>
@@ -154,6 +155,7 @@ We attack **without target gradients** – only knowledge that the victim uses a
     <tr><td><strong>AFM (Ours)</strong></td><td><strong>0.506</strong></td><td>1.192</td><td><strong>12.82</strong></td><td>46.68</td><td><strong>0.022</strong></td><td><strong>0.148</strong></td><td><strong>0.995</strong></td><td><strong>0.871</strong></td></tr>
   </tbody>
 </table>
+</div>
 
 - AFM achieves **state‑of‑the‑art transfer imperceptibility** (LPIPS as low as 0.022) while keeping attack success competitive.
 - This verifies that **any Transformer‑based AD agent** is vulnerable, regardless of architecture (modular or VLA).
