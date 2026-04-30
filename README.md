@@ -72,17 +72,36 @@ Closed‑loop evaluation uses **Bench2Drive** (10 routes, CARLA).
 ---
 
 ### 📈 Open-loop Evaluation
-# TABLE I
-**PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS**
-
-| Method | SHIFT (m) ↑ H | SHIFT (m) ↑ E | SR (%) ↑ H | SR (%) ↑ E | LPIPS ↓ H | LPIPS ↓ E | SSIM ↑ H | SSIM ↑ E | FID ↓ H | FID ↓ E | TIME (s) H | TIME (s) E |
-|--------|---------------|---------------|------------|------------|-----------|-----------|----------|----------|---------|---------|------------|------------|
-| FGSM | 4.188 | 4.889 | 79.99 | 89.71 | 0.379 | 0.370 | 0.697 | 0.708 | 42.401 | 64.187 | 6.134 | **0.140** |
-| PGD | 5.792 | 5.997 | 84.98 | 92.03 | 0.372 | 0.359 | 0.722 | 0.732 | 42.271 | 58.425 | **1.208** | 1.230 |
-| DiffAttack | 1.515 | 2.465 | 60.91 | 60.12 | 0.170 | 0.165 | 0.865 | 0.871 | 20.794 | 36.565 | 10.616 | 10.606 |
-| PerC-AL | **6.741** | **6.809** | **99.28** | **97.06** | 0.685 | 0.694 | 0.202 | 0.196 | 190.116 | 223.980 | 10.979 | 11.153 |
-| NCF | 0.261 | 0.517 | 7.32 | 15.34 | 0.262 | 0.256 | 0.871 | 0.879 | 22.177 | 34.223 | 3.075 | 3.007 |
-| AFM (Ours) | 3.709 | 4.932 | 69.35 | 88.24 | **0.147** | **0.141** | **0.876** | **0.881** | **11.460** | **23.180** | 6.652 | 6.749 |
+<table>
+  <caption><strong>TABLE I</strong><br>PERFORMANCE COMPARISON OF ATTACK METHODS ON TRANSFUSER ACROSS COMPLEX(H) AND COMMON(E) SCENARIOS</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="2">SHIFT (m) ↑</th>
+      <th colspan="2">SR (%) ↑</th>
+      <th colspan="2">LPIPS ↓</th>
+      <th colspan="2">SSIM ↑</th>
+      <th colspan="2">FID ↓</th>
+      <th colspan="2">TIME (s) ↓</th>
+    </tr>
+    <tr>
+      <th>H</th><th>E</th>
+      <th>H</th><th>E</th>
+      <th>H</th><th>E</th>
+      <th>H</th><th>E</th>
+      <th>H</th><th>E</th>
+      <th>H</th><th>E</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>FGSM</td><td>4.188</td><td>4.889</td><td>79.99</td><td>89.71</td><td>0.379</td><td>0.370</td><td>0.697</td><td>0.708</td><td>42.401</td><td>64.187</td><td>6.134</td><td><b>0.140</b></td></tr>
+    <tr><td>PGD</td><td>5.792</td><td>5.997</td><td>84.98</td><td>92.03</td><td>0.372</td><td>0.359</td><td>0.722</td><td>0.732</td><td>42.271</td><td>58.425</td><td><b>1.208</b></td><td>1.230</td></tr>
+    <tr><td>DiffAttack</td><td>1.515</td><td>2.465</td><td>60.91</td><td>60.12</td><td>0.170</td><td>0.165</td><td>0.865</td><td>0.871</td><td>20.794</td><td>36.565</td><td>10.616</td><td>10.606</td></tr>
+    <tr><td>PerC-AL</td><td><b>6.741</b></td><td><b>6.809</b></td><td><b>99.28</b></td><td><b>97.06</b></td><td>0.685</td><td>0.694</td><td>0.202</td><td>0.196</td><td>190.116</td><td>223.980</td><td>10.979</td><td>11.153</td></tr>
+    <tr><td>NCF</td><td>0.261</td><td>0.517</td><td>7.32</td><td>15.34</td><td>0.262</td><td>0.256</td><td>0.871</td><td>0.879</td><td>22.177</td><td>34.223</td><td>3.075</td><td>3.007</td></tr>
+    <tr><td>AFM (Ours)</td><td>3.709</td><td>4.932</td><td>69.35</td><td>88.24</td><td><b>0.147</b></td><td><b>0.141</b></td><td><b>0.876</b></td><td><b>0.881</b></td><td><b>11.460</b></td><td><b>23.180</b></td><td>6.652</td><td>6.749</td></tr>
+  </tbody>
+</table>
 
 
 **Table I – Performance on TransFuser (modular)**
